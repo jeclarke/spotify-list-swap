@@ -54,10 +54,9 @@ Example output:
 Please log in to Spotify by visiting the following page in your browser: https://accounts.spotify.com/authorize?client_id=69fe015becc24eeea3e8425cc12e3457&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fcallback&response_type=code&scope=user-read-private+playlist-modify-private&state=abc123
 You are logged in as: a user name
 2023/07/14 15:33:00 Making a new list based on "Emo" with 32 tracks
-2023/07/14 15:33:00   Page 1 has 32 tracks
-2023/07/14 15:33:01   Swapping Celebration Song from The Greatest Mistake of My Life for In Circles (ID = 6SUNDxb0VGN0GknHuJPa6i)
-2023/07/14 15:33:01   Swapping White Lies - Original from White Lies for White Lies - Acoustic (ID = 47KSPYEKsG5czcIrdLuYDe)
-2023/07/14 15:33:01   Swapping Roses for the Dead from Hours for History (ID = 6Fbh1lMmind3rj6W67QFeO)
+2023/07/14 15:33:01   Swapping Celebration Song from The Greatest Mistake of My Life for In Circles
+2023/07/14 15:33:01   Swapping White Lies - Original from White Lies for White Lies - Acoustic
+2023/07/14 15:33:01   Swapping Roses for the Dead from Hours for History
 ...
 ````
 
