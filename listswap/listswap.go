@@ -20,8 +20,8 @@ var (
 	state = "abc123"
 )
 
-// Hello returns a greeting for the named person.
-func Hello(playlistID string) {
+// Run runs the tool to create a new playlist
+func Run(playlistID string) {
 
 	// first start an HTTP server
 	http.HandleFunc("/callback", completeAuth)
@@ -75,11 +75,9 @@ func Hello(playlistID string) {
 	}
 
 	s := rand.NewSource(time.Now().Unix())
-	r := rand.New(s) // initialize local pseudorandom generator
+	r := rand.New(s)
 
 	for page := 1; ; page++ {
-		log.Printf("  Page %d has %d tracks", page, len(tracks.Items))
-
 		newTracks := make([]spotify.ID, 0, len(tracks.Items))
 		for _, track := range tracks.Items {
 			t := track.Track.Track
@@ -96,7 +94,7 @@ func Hello(playlistID string) {
 			newIdx := r.Intn(trackCount)
 			newT := fullAlbum.Tracks.Tracks[newIdx]
 
-			log.Printf("  Swapping %v from %v for %v (ID = %v)", t.Name, t.Album.Name, newT.Name, newT.ID)
+			log.Printf("  Swapping %v from %v for %v", t.Name, t.Album.Name, newT.Name, newT.ID)
 			newTracks = append(newTracks, newT.ID)
 		}
 		_, err = client.AddTracksToPlaylist(ctx, newPlaylist.ID, newTracks...)
