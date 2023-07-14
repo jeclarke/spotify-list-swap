@@ -6,8 +6,6 @@ This tool makes a new playlist based on an existing one, with each track swapped
 ## Guide
 
 ### Get the repo
-Clone this repo:
-
 ````
 git clone https://github.com/jeclarke/spotify-list-swap.git
 ````
