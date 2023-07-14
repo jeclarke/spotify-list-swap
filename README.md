@@ -28,6 +28,9 @@ cmd/listswap.env
 ````
 
 ### Build the local app
+First, install the go tools used to build the app here [https://go.dev/doc/install]()
+
+Then build the app:
 ````
 cd spotify-list-swap/cmd
 go build
